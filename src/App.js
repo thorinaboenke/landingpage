@@ -1,6 +1,8 @@
 /** @jsx jsx */
 /** @jsxFrag React.Fragment */
 import { jsx, css } from '@emotion/core';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import logo from './images/logo.png';
 import sarah from './images/sarah.png';
 import fredo from './images/fredo.png';
@@ -68,19 +70,18 @@ a {
     &:hover {
       color: #ff6661;
     }
-
 `;
 
-const MainStyle = css`
+const MainStyles = css`
   margin-top: 200px;
 `;
 
-const SectionStyle = css`
+const SectionStyles = css`
   text-align: center;
 `;
 
-const Section1Style = css`
-  ${SectionStyle}
+const Section1Styles = css`
+  ${SectionStyles}
   margin-left: auto;
   margin-right: auto;
   h1 {
@@ -112,8 +113,8 @@ const Section1Style = css`
     display: block;
   }
 `;
-const Section2Style = css`
-  ${SectionStyle}
+const Section2Styles = css`
+  ${SectionStyles}
   background-color: black;
   color: white;
   padding-top: 50px;
@@ -145,14 +146,14 @@ const Section2Style = css`
   }
 `;
 
-const PeopleContainerStyle = css`
+const PeopleContainerStyles = css`
   display: flex;
   justify-content: space-between;
   margin: 0 auto 0 auto;
   width: 870px;
 `;
 
-const PeopleStyle = css`
+const PeopleStyles = css`
   text-align: left;
   img {
     height: 224px;
@@ -168,8 +169,8 @@ const PeopleStyle = css`
   }
 `;
 
-const Section3Style = css`
-  ${SectionStyle}
+const Section3Styles = css`
+  ${SectionStyles}
   div:first-child {
     color: #6284fe;
     font-style: italic;
@@ -272,8 +273,8 @@ function App() {
         </div>
       </header>
 
-      <main css={MainStyle}>
-        <section css={Section1Style}>
+      <main css={MainStyles}>
+        <section css={Section1Styles}>
           <h1>
             ProtoPie 5.0 <br />
             The future of interactive prototyping
@@ -288,7 +289,7 @@ function App() {
           </div>
           <video src={togglevideo}></video>
         </section>
-        <section css={Section2Style}>
+        <section css={Section2Styles}>
           <h2>
             5.0 Launch Event: Introducing Interaction recipes & Interaction
             libraries
@@ -302,25 +303,25 @@ function App() {
           <div css={ButtonDiv}>
             <button>Watch Now</button>
           </div>
-          <div css={PeopleContainerStyle}>
-            <div css={PeopleStyle}>
+          <div css={PeopleContainerStyles}>
+            <div css={PeopleStyles}>
               <img src={tony} alt=""></img>
               <div>Tony Kim</div>
               <div>CEO & Co-founder</div>
             </div>
-            <div css={PeopleStyle}>
+            <div css={PeopleStyles}>
               <img src={fredo} alt=""></img>
               <div>Fredo Tan</div>
               <div>Head of Customer Success</div>
             </div>
-            <div css={PeopleStyle}>
+            <div css={PeopleStyles}>
               <img src={sarah} alt=""></img>
               <div>Sarah Sehee Lim</div>
               <div>Lead Product Designer</div>
             </div>
           </div>
         </section>
-        <section css={Section3Style}>
+        <section css={Section3Styles}>
           <div>Team & Enterprise plan only</div>
           <h2>Interaction recipes</h2>
           <p>
