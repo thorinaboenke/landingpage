@@ -211,15 +211,6 @@ const Section3Style = css`
     margin-top: 32px;
   }
 `;
-const Section4Style = css`
-  ${SectionStyle}
-`;
-const Section5Style = css`
-  ${SectionStyle}
-`;
-const Section6Style = css`
-  ${SectionStyle}
-`;
 
 const GridStyles = css`
   align-content: top;
